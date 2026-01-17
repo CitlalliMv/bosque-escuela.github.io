@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Bosque Escuela</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <script>
+function mostrarDetalles(boton) {
+    const detalles = boton.nextElementSibling;
+
+    if (detalles.style.display === "block") {
+        detalles.style.display = "none";
+        boton.textContent = "Ver detalles";
+    } else {
+        detalles.style.display = "block";
+        boton.textContent = "Ocultar detalles";
+    }
+}
+</script>
+    <nav class="menu">
+    <ul>
+        <li><a href="#coniferas">🌲 Coníferas</a></li>
+        <li><a href="#arbustos">🌿 Arbustos</a></li>
+        <li><a href="#frutales">🍎 Frutales</a></li>
+    </ul>
+</nav>
+
+    <header>
+        <h1>BOSQUE ESCUELA</h1>
+    </header>
+
+             <section class="descripcion">
+                <h2>¿Qué es el Bosque Escuela?</h2>
+                <p>
+                    El proyecto <strong>Bosque Escuela</strong> tiene como objetivo fomentar el cuidado del medio ambiente mediante
+                    la plantación de árboles y plantas, permitiendo a los estudiantes aprender de forma práctica sobre la naturaleza,
+                    la reforestación y la importacia de conservar los ecosistemas.
+                </p>
+             </section>
+
+             <section class="especies"> 
+               <p><h2> Especies plantadas en el Bosque Escuela </h2></p>
+
+                 <div class="tarjeta">
+                    <h2 id="coniferas">🌲 Coníferas</h2>
+            <img src="c:\Users\zurie\Downloads\WhatsApp Image 2026-01-13 at 6.33.54 PM (2).jpeg" alt="Pino Taeda">
+            <h3>🌲PINO TAEDA</h3>
+                <button class="btn-detalles" onclick="mostrarDetalles(this)">
+        Ver detalles
+    </button>
+       <div class="detalles">
+            <p><strong>🌱GENERO:</strong> Pinus - Pinos, Ocotes, Piñones </p>
+            <p><strong>🌳FAMILIA:</strong> Pineaceae - Pináceas</p>
+            <p><strong>TAMBIEN CONOCIDO COMO:</strong> Pino de incienso Pino amarillo, Árbol de Eisenhower</p>
+            <p>
+                <strong>⏳TIEMPO DE CRECIMIENTO:</strong><strong> Crece 60 cm o más al año en sus primeras décadas</strong>, y puede alcanzar alturas de 18-21 metros,
+                    con turnos de corta para madera de tan solo 25 años en ciertas regiones</p>
+
+            <p><strong>💧CUIDADOS NECESARIOS:</strong> Pleno sol, suelo bien drenado, ligeramente ácido y rico en materia orgánica, y riego regular
+                (más en verano, menos en invierno, sin encarchar) especialmente al establecerse; es muy resistente una vez maduro y
+                adaptable, aunque vigilar plagas y enfermedades es clave.
+                </div>
+            </p>
+        </div>
+
+                        <div class="tarjeta">
+                <h2 id="arbustos">🌿 Arbustos</h2>
+            <img src="c:\Users\zurie\Downloads\WhatsApp Image 2026-01-13 at 6.33.52 PM.jpeg" alt="Lentisco">
+            <h3>🌿LENTISCO</h3>
+                <button class="btn-detalles" onclick="mostrarDetalles(this)">
+        Ver detalles
+    </button>
+    <div class="detalles">
+            <p><strong>🌱GENERO:</strong> Malosma - Lentiscos, Laureles, Zumaques de laurel </p>
+            <p><strong>🌳FAMILIA:</strong> Anacardiaceae - Anacardiáceas, Anacardos </p>
+            <p>
+                <strong>⏳TIEMPO DE CRECIMIENTO:</strong><strong> Es un arbusto perenne de crecimiento moderado a lento</strong>, que requiere paciencia pero es
+                muy resistente, ideal para jardines secos, prosperando con sol y poca agua una vez establecido, y sus frutos maduran de otoño a invierno, con
+                una vida útil muy larga, formando parte del paisaje mediterráneo durante siglos </p>
+                
+            <p><strong>💧CUIDADOS NECESARIOS:</strong> Necesita sol pleno, riego escaso (solo cuando el sustrato esté seco, es muy resistente a la sequía) y suelos
+                bien drenados, preferiblemente calcáreos, evitando encharcamientos para prevenir pudrición de raíces. Es resistente a altas temperturas y frío 
+                moderado, no requiere muchos cuidados y es ideal para climas mediterráneos, siendo importante la poda de mantenimiento en invierno para dar forma
+                y eliminar ramas secas.
+            </div>
+            </p>
+        </div>
+
+                <div class="tarjeta">
+    <h2 id="arbustos">🌿 Arbustos</h2>
+            <img src="c:\Users\zurie\Downloads\WhatsApp Image 2026-01-16 at 9.59.38 PM (1).jpeg" alt="Roble">
+            <h3>🌿ROBLE FUSIFORME DE TEJAS</h3>
+                <button class="btn-detalles" onclick="mostrarDetalles(this)">
+        Ver detalles
+    </button>
+    <div class="detalles">
+            <p><strong>🌱GENERO:</strong> Quercus - Encinos, Robles, Alcornoques </p>
+            <p><strong>🌳FAMILIA:</strong> Fagaceae - Fagáceas, Robles, Encinos </p>
+            <p><strong>TAMBIEN CONOCIDO COMO:</strong> Encino molino. </p>
+            <p>
+                <strong>⏳TIEMPO DE CRECIMIENTO:</strong><strong> Árbol longevo que crece a un ritmo moderado a lento. </strong> Puede alcanzar alturas considerables
+                a lo largo de su vida, con ejemplos que viven hasta 500 años o más, y que produce bellotas que maduran en unos 6 meses, siendo notable
+            por su resistencia y majestuosidad en Texas. </p>
+                
+            <p><strong>💧CUIDADOS NECESARIOS:</strong> El roble fusiforme de Texas (Quercus fusiformis) requiere riego profundo y poco frecuente (cada 2-3 semanas),
+                prefiere pleno sol pero necesita sombra gradual al trasplantar, se beneficia de fertilizante equilibrado (rico en nitrógeno) y crece mejor en suelos
+                con pH 6-7, idealmente plantado en otoño o primavera para un buen establecimiento de raíces, protegiendo de heladas fuertes con telas aislantes.
+            </div>
+            </p>
+        </div>
+
+        <div class="tarjeta">
+            <h2 id="frutales">🍎 Frutales</h2>
+            <img src="c:\Users\zurie\Downloads\WhatsApp Image 2026-01-13 at 6.33.51 PM (2).jpeg" alt="Melocotonero">
+            <h3>🍎MELOCOTONERO</h3>
+                <button class="btn-detalles" onclick="mostrarDetalles(this)">
+        Ver detalles
+    </button>
+    <div class="detalles">
+            <p><strong>🌱GENERO:</strong> Prunus - Duraznos, Ciruelos, Cerezos </p>
+            <p><strong>🌳FAMILIA:</strong> Rosaceae - Rosáceas, Ciruelo africano </p>
+            <p><strong>TAMBIEN CONOCIDO COMO:</strong> Prisco, Durazno, Melocotón pajizo, Durazno real</p>
+            <p>
+                <strong>⏳TIEMPO DE CRECIMIENTO:</strong><strong> Empieza a dar frutos entre 2 y 5 años</strong>, dependiendo de si es de semilla (más lento, 3 - 5 años)
+            o injertado (más rápido, 1.5 - 3 años), alcanzando su máxima producción alrededor de los 10 - 15 años, y su vida productiva es de unos 15 años,
+        aunque puede extenderse con buen cuidado y sobreinjertos. </p>
+                
+            <p><strong>💧CUIDADOS NECESARIOS:</strong> Luz solar plena, riego constante pero sin encarchar (idealmente por goteo) suelo bien drenado y fertilización
+                equilibrada; la poda es crucial a finales de invierno para una copa abierta y producción óptima, raleando frutos en verano y protegiendo flores
+                tempranas de heladas para asegurar una buena cosecha.
+            </div>
+            </p>
+        </div>
+
+         <div class="tarjeta">
+            <h2 id="frutales">🍎 Frutales</h2>
+            <img src="c:\Users\zurie\Downloads\WhatsApp Image 2026-01-13 at 6.33.53 PM (2).jpeg" alt="Limonero">
+            <h3>🍎LIMONERO</h3>
+                <button class="btn-detalles" onclick="mostrarDetalles(this)">
+        Ver detalles
+    </button>
+    <div class="detalles">
+            <p><strong>🌱GENERO:</strong> Citrus - Cítricos </p>
+            <p><strong>🌳FAMILIA:</strong> Rutaceae - Rutáceas </p>
+            <p><strong>TAMBIEN CONOCIDO COMO:</strong> Limón, Naranja bergamota, Lima, Limón persa, Limón dulce, Naranja dulce de la india </p>
+            <p>
+                <strong>⏳TIEMPO DE CRECIMIENTO:</strong><strong> Tarda entre 3 y 6 años en empezar a dar frutos desde que se planta</strong>, aunque el crecimiento del árbol
+                es más rápido, pudiendo alcanzar unos 30 cm el primer año. El tiempo exacto depende de la variedad, el clima cálido, la nutrición y los cuidados, y desde
+            que el fruto aparece hasta que madura pueden pasar varios meses (3 a 6 meses o más). </p>
+                
+            <p><strong>💧CUIDADOS NECESARIOS:</strong> Necesita mucho sol (6 - 8 horas), un suelo bien drenado y riego abundante pero sin encharcar (más en verano, menos en invierno),
+                dejando secar la capa superior entre riegos; tambien requiere fertilización regular con abonos para cítricos (NPK) y poda para airear y dar forma,
+                además de protegerlo de vientos fuertes y heladas, controlando plagas como cochinillas o minadores de hoja.
+                </div>
+            </p>
+        </div>
+
+                 <div class="tarjeta">
+                    <h2 id="frutales">🍎 Frutales</h2>
+            <img src="c:\Users\zurie\Downloads\WhatsApp Image 2026-01-13 at 6.33.53 PM.jpeg" alt="Guayaba">
+            <h3>🍎GUAYABA</h3>
+                <button class="btn-detalles" onclick="mostrarDetalles(this)">
+        Ver detalles
+    </button>
+    <div class="detalles">
+            <p><strong>🌱GENERO:</strong> Psidium - Guayabas, Guayabos </p>
+            <p><strong>🌳FAMILIA:</strong> Myrtaceae - Mirtáceas </p>
+            <p><strong>TAMBIEN CONOCIDO COMO:</strong> Guayabo, Guayaba dulce. Savintu, Guayabo agrio, Guayabo blanco, Guayabo cotorrero,
+            Guayabo silvestre, Carhuas - sahuintu, Verde - zahuintu </p>
+            <p>
+                <strong>⏳TIEMPO DE CRECIMIENTO:</strong><strong> 2 y 4 años</strong> La guayaba (Psidium guajava) generalmente tarda entre 2 y 4 años en comenzar a producir frutos
+                después de ser plantada. En condiciones ideales, puede florecer y dar frutos en tan solo dos años, aunque en algunos casos puede tardar hasta ocho años. La edad
+                de la planta, el método de propagación, el clima y la calidad del suelo son factores que influyen en este tiempo. </p>
+                
+            <p><strong>💧CUIDADOS NECESARIOS:</strong> Para el cuidado de la guayaba, es fundamental seguir ciertos cuidados específicos que aseguren su crecimiento saludable.
+                Desde la elección de un adecuado sustrato, el riego correcto, hasta el manejo de plagas y enfermedades, cada aspecto contribuye a la salud general del árbol.
+                La falta de cuidados apropiados puede resultar en problemas que afecten no solo la producción de fruta, sino también la longevidad del árbol.
+            </div>
+            </p>
+        </div>
+
+                         <div class="tarjeta">
+                            <h2 id="frutales">🍎 Frutales</h2>
+            <img src="c:\Users\zurie\Downloads\WhatsApp Image 2026-01-13 at 6.33.53 PM (1).jpeg" alt="Manzano">
+            <h3>🍎MANZANO</h3>
+                <button class="btn-detalles" onclick="mostrarDetalles(this)">
+        Ver detalles
+    </button>
+    <div class="detalles">
+            <p><strong>🌱GENERO:</strong> Malus - Malus </p>
+            <p><strong>🌳FAMILIA:</strong> Rosaceae - Rosáceas, Ciruelo africano </p>
+            <p><strong>TAMBIEN CONOCIDO COMO:</strong> Manzano paraíso </p>
+            <p>
+                <strong>⏳TIEMPO DE CRECIMIENTO:</strong><strong> 4 - 8 años</strong> El tiempo de crecimiento de un manzano varía según la variedad y las condiciones ambientales.
+                Generalmente, un árbol de manzano puede tardar entre 4 a 8 años en alcanzar su pleno potencial y producir frutos. Durante este tiempo, el crecimiento incluye etapas
+                como la germinación, plántula, juvenil y madurez. La calidad del suelo, la exposición a la luz solar y el riego adecuado son factores cruciales que influyen en el tiempo de crecimiento. </p>
+                
+            <p><strong>💧CUIDADOS NECESARIOS:</strong>  Necesita un suelo bien drenado y rico en nutrientes. Se recomienda un pH entre 6.0 y 7.0.  Riego regular, evitando el encharcamiento.
+                En verano, riega 2-3 veces por semana. Realiza poda anual para controlar el tamaño y promover la producción de frutas. Aplica fertilizantes equilibrados que contengan nitrógeno,
+                fósforo y potasio a principios de primavera. Plantar diferentes variedades para asegurar la polinización cruzada. Protege el árbol de heladas tardías y plagas como pulgones y carpocapsa.
+            </div>
+            </p>
+        </div>
+
+                <div class="tarjeta">
+                <h2 id="frutales">🍎 Frutales</h2>
+            <img src="c:\Users\zurie\Downloads\WhatsApp Image 2026-01-13 at 6.33.54 PM.jpeg" alt="Ciruelo Cherokee">
+            <h3>🍎CIRUELO CHEROKEE</h3>
+                <button class="btn-detalles" onclick="mostrarDetalles(this)">
+        Ver detalles
+    </button>
+    <div class="detalles">
+            <p><strong>🌱GENERO:</strong> Prunus - Duraznos, Ciruelos, Cerezos </p>
+            <p><strong>🌳FAMILIA:</strong> Rosaceae - Rosáceas, Ciruelo africano </p>
+            <p><strong>TAMBIEN CONOCIDO COMO:</strong> Ciruelo de Chickasaw, Ciruelo florido de arena, Ciruelo de cerdo, Ciruelo sandhill, Ciruelo de arena </p>
+            <p>
+                <strong>⏳TIEMPO DE CRECIMIENTO:</strong><strong> 3 - 6 años después de ser plantado</strong> Para acelerar su crecimiento, es importante asegurarse de que reciba suficiente luz
+                solar, agua y nutrientes. Un riego adecuado y la aplicación de fertilizantes son esenciales para un crecimiento saludable. Además, los ciruelos suelen crecer a un ritmo moderado,
+                con un promedio de 1 a 2 cm por año. </p>
+                
+            <p><strong>💧CUIDADOS NECESARIOS:</strong> Necesita una ubicación con buena exposición solar, preferentemente entre seis y ocho horas de luz directa al día.
+                Prefiere suelos fértil, con buen drenaje, ya que el exceso de humedad puede afectar sus raíces y provocar enfermedades. Debe ser regular, especialmente durante los primeros
+                años de crecimiento y en temporadas de calor, evitando el encharcamiento. Se recomienda aplicar abonos ricos en fósforo y potasio en invierno para estimular la floración y
+                el desarrollo del fruto. Es esencial para dar forma a la copa y favorecer una buena aireación. Se recomienda podar en invierno eliminando ramas secas, enfermas o mal orientadas.
+            </div>
+            </p>
+        </div>
+
+         <div class="tarjeta">
+                <h2 id="frutales">🍎 Frutales</h2>
+            <img src="c:\Users\zurie\Downloads\WhatsApp Image 2026-01-16 at 9.59.38 PM (2).jpeg" alt="Peral comun">
+            <h3>🍎PERAL COMÚN</h3>
+                <button class="btn-detalles" onclick="mostrarDetalles(this)">
+        Ver detalles
+    </button>
+    <div class="detalles">
+            <p><strong>🌱GENERO:</strong> Pyrus -  Perales </p>
+            <p><strong>🌳FAMILIA:</strong> Rosaceae - Rosáceas, Ciruelo africano </p>
+            <p><strong>TAMBIEN CONOCIDO COMO:</strong> Peral, Peral silvestre, Pera </p>
+            <p>
+                <strong>⏳TIEMPO DE CRECIMIENTO:</strong><strong> Entre los 3 y 5 años si es injertado, mientras que desde semilla
+                    puede tardar de 7 a 10 años. </strong> Una vez productivo, un árbol puede dar peras anualmente durante 30 a 50 años, con una cosecha
+                principal en verano y otoño. </p>
+                
+            <p><strong>💧CUIDADOS NECESARIOS:</strong> Para cuidar un peral, necesita sol pleno y un suelo bien drenado; el riego es crucial,
+                especialmente al inicio (semanalmente el primer año), manteniendo la tierra húmeda sin encharcar; la fertilización debe ser regular
+                (tres veces al año con abono para frutales); y la poda es vital para airear la copa y favorecer la fruta. Protege de heladas tardías y plagas,
+                y almacena las peras maduras en frío, separadas de alimentos con olores fuertes para evitar absorción de aromas.
+            </div>
+            </p>
+        </div>
+
+                  <div class="tarjeta">
+                <h2 id="frutales">🍎 Frutales</h2>
+            <img src="c:\Users\zurie\Downloads\WhatsApp Image 2026-01-16 at 9.59.38 PM (4).jpeg" alt="Naranja">
+            <h3>🍎NARANJA AGRIA</h3>
+                <button class="btn-detalles" onclick="mostrarDetalles(this)">
+        Ver detalles
+    </button>
+    <div class="detalles">
+            <p><strong>🌱GENERO:</strong> Citrus - Cítricos </p>
+            <p><strong>🌳FAMILIA:</strong> Rutaceae - Rutáceas </p>
+            <p><strong>TAMBIEN CONOCIDO COMO:</strong> Naranjo amargo, Naranjo agrio, Naranjo, Paraguay apepú, Naranja cachorreña, Naranja
+                cajera, Naranja de sevilla, Naranja andaluza, Naranja bigarade, Naranja agria corriente, Azahar, Lima de Confitar </p>
+            <p>
+                <strong>⏳TIEMPO DE CRECIMIENTO:</strong><strong> Desde la semilla puede tardar años en dar frutos (3 - 5 o más),
+                    pero si se planta un árbol joven o injerto, se obtienen cosechas en 3 - 4 años.
+                     </strong> Una vez florece, el fruto tarda entre 8 y 12 meses en madurar, y su cosecha puede ser entre otoño y
+                    primavera, dependiendo del clima, con algunos árboles produciendo hasta dos veces al año. </p>
+                
+            <p><strong>💧CUIDADOS NECESARIOS:</strong> La naranja agria necesita sol abundante, riego constante pero sin encharcar
+                (mejor temprano en la mañana o noche, con agua baja en cal), suelo bien drenado y protección contra heladas
+                (sensible bajo 0°C), además de fertilizante específico para cítricos y poda para aireación y forma, controlando plagas
+                como pulgones con métodos ecológicos como jabón potásico.
+            </div>
+            </p>
+        </div>
+
+                          <div class="tarjeta">
+                <h2 id="frutales">🍎 Frutales</h2>
+            <img src="c:\Users\zurie\Downloads\WhatsApp Image 2026-01-16 at 9.59.38 PM.jpeg" alt="Higuera">
+            <h3>🍎HIGUERA</h3>
+                <button class="btn-detalles" onclick="mostrarDetalles(this)">
+        Ver detalles
+    </button>
+    <div class="detalles">
+            <p><strong>🌱GENERO:</strong> Ficus - Higueras, Amates, Higos </p>
+            <p><strong>🌳FAMILIA:</strong> Moraceae - Moráceas </p>
+            <p><strong>TAMBIEN CONOCIDO COMO:</strong> Higo, Breva </p>
+            <p>
+                <strong>⏳TIEMPO DE CRECIMIENTO:</strong><strong> Entre 2 - 3 años, aunque la plena producción se alcanza entre los 5 y 8 años.
+                     </strong> Necesita sol, agua y tierra fértil para acelerar su crecimiento, y puede producir dos cosechas al año en climas cálidos,
+                    madurando los higos de 70 a 130 dias después de formarse. </p>
+                
+            <p><strong>💧CUIDADOS NECESARIOS:</strong> Para cuidar una higuera, necesita sol pleno y calor, riego moderado y profundo (más en verano),
+                evitar encharcamientos, y una poda anual a finales del invierno o principios de primavera para formar la estructura y mejorar la producción
+                de frutos, especialmente en climas fríos. Es resistente a la sequía una vez establecida, pero un buen riego es clave para la fruta, y el exceso
+                de nitrógeno puede ser perjudicial.
+            </div>
+            </p>
+        </div>
+                    
+                </h2>
+             </section>
+
+             <footer>
+                <p> Bosque Escuela</p>
+                <p> Comprometidos con el medio ambiente</p>
+             </footer>
+
+</body>
+</html>
